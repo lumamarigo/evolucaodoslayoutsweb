@@ -1,0 +1,55 @@
+#site {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-family: Tahoma;
+    font-size: 3em;
+    text-align: center;
+}
+
+#topo,
+#rodape {
+    height: 100px;
+    background-color: lavender;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+}
+
+#esquerda,
+#direita {
+    flex-grow: 1;
+    height: 200px;
+}
+
+#esquerda{
+    background-color: aqua;
+}
+
+#direita{
+    display: none;
+    background-color: pink;
+}
+
+#conteudo {
+    background-color: yellow;
+    flex-grow: 2;
+    height: 400px;
+}
+
+@media screen and (min-width: 992px) {
+    #main {
+        flex-direction: row;
+    }
+
+    #main>div {
+        height: 500px;
+    }
+
+    #direita{
+        display: block;
+    }
+}

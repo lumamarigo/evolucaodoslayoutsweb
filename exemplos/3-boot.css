@@ -1,0 +1,27 @@
+body{
+    font-family: Tahoma;
+    font-size: 3em;
+    text-align: center;
+}
+#topo,
+#rodape {
+    height: 100px;
+    background-color: lavender;
+}
+
+#esquerda,
+#conteudo,
+#direita {
+    height: 400px;
+}
+
+#esquerda{
+    background-color: aqua;
+}
+#direita {
+    background-color: pink;
+}
+
+#conteudo {
+    background-color: yellow;
+}

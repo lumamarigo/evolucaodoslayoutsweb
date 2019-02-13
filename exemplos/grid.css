@@ -1,0 +1,96 @@
+/*RESET*/
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+}
+
+/*SITE*/
+
+#site {
+    margin: 0 auto;
+    border: 1px solid rgb(238, 238, 238);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+a{
+    color: #fff;
+}
+
+h1 {
+    grid-area: title;
+    background-color: #edcbde;
+    margin: 0;
+    padding: 20px;
+}
+
+#meta {
+    grid-area: meta;
+    display: flex;
+    justify-content: space-between;
+    background-color: #add6d1;
+    padding: 20px;
+}
+
+img {
+    grid-area: picture;
+    width: 100%;
+    padding: 50px;
+    background-color: #fefbcd;
+}
+
+#content {
+    grid-area: content;
+    background-color: #8792c7;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #b3c3d9;    
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+#site {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+        "title title"
+        "picture picture"
+        "meta meta"
+        "content content"
+        "footer footer"
+}
+
+@media all and (min-width: 1025px) {
+    #site {
+        /* aqui vai o layout para o desktop*/
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "picture picture"
+        "meta title"
+        "meta content"
+        "meta footer"
+
+    }
+}

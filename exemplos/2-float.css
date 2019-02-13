@@ -1,0 +1,43 @@
+#site {
+    font-family: Tahoma;
+    font-size: 2em;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+#topo,
+#rodape {
+    height: 150px;
+    background-color: yellow;
+}
+#main>div {
+    height: 200px;
+}
+#esquerda,
+#direita {
+    background-color: pink;
+}
+#conteudo {
+    background-color: aqua;
+}
+#rodape {
+    clear: both;
+    background-color: lavender;
+}
+@media screen and (min-width: 992px) {
+    #site{
+
+        width: 1024px;
+    }
+    #main>div {
+        float: left;
+        height: 500px;
+    }
+    #conteudo {
+        width: 60%;
+    }
+    #esquerda,
+    #direita {
+        width: 20%;
+    }
+}
